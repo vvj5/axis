@@ -1,0 +1,52 @@
+<section id="contact" class="contact">
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-2"></div>
+      <div class="col-lg-4 col-sm-6 text-center">
+        <h4>CALL<br>
+          <a href="tel:5125849990"><i class="fa fa-phone fa-4x"></i><br> {{ site.telephone }}</a>
+        </h4>
+        <br>
+        <br>
+      </div>
+      <div class="col-lg-4 col-sm-6 text-center">
+        <h4>EMAIL<br>
+
+          <a href="mailto:{{ site.email }}"><i class="fa fa-envelope-o fa-4x"></i><br>{{ site.email }}</a>
+        </h4>
+        <br>
+        <br>
+      </div>
+      <div class="col-lg-2"></div>
+      </div>
+      <hr class="large">
+      <div class="row">
+      <div class="col-lg-12 col-sm-6 text-center">
+      <br>
+      <br>
+        <h4>
+          <div id="yelp-biz-badge-rrc-u31sFHcvnn-gYz_sXtojog"><a href="http://yelp.com/biz/axis-green-services-austin" target="_blank">Check out Axis Green Services on Yelp</a></div><script>(function(d, t) {var g = d.createElement(t);var s = d.getElementsByTagName(t)[0];g.id = "yelp-biz-badge-script-rrc-u31sFHcvnn-gYz_sXtojog";g.src = "//yelp.com/biz_badge_js/en_US/rrc/u31sFHcvnn-gYz_sXtojog.js";s.parentNode.insertBefore(g, s);}(document, 'script'));</script>
+        </h4>
+      </div>
+    </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12 col-sm-6 text-center">
+      <br>
+      <br>
+        <p>
+          {% for address in site.address %}
+          {{ address.line }}<br>
+          {% endfor %}
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12 col-sm-6 text-center">
+        <hr class="small">
+        <p class="text-muted">Copyright &copy; {{ site.copyright }} 20{{ site.time | date: '%y' }}</p>
+      </div>
+    </div>
+  </div>
+</footer>
