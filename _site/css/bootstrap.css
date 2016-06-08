@@ -1310,10 +1310,12 @@ p {
   font-size: 16px;
   font-weight: 300;
   line-height: 1.4;
+  color: #333333;
 }
 @media (min-width: 768px) {
   .lead {
-    font-size: 21px;
+    font-size: 16px;
+    color: #333333;
   }
 }
 small,
@@ -3558,6 +3560,7 @@ tbody.collapse.in {
 @media (min-width: 768px) {
   .navbar-right .dropdown-menu {
     right: 0;
+    margin-right: 30px;
     left: auto;
   }
   .navbar-right .dropdown-menu-left {
@@ -4408,10 +4411,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
   .navbar-right {
     float: right !important;
-    margin-right: -15px;
+    margin-right: 25px;
   }
   .navbar-right ~ .navbar-right {
-    margin-right: 0;
+    margin-right: 25px;
   }
 }
 .navbar-default {
